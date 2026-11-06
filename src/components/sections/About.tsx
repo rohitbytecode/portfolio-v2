@@ -9,18 +9,19 @@ import { AnimatedSection } from "~/components/ui/AnimatedSection";
 import { SectionHeading } from "~/components/ui/SectionHeading";
 
 const stats = [
-  { value: "4+", label: "Years Experience" },
+  { value: "2+", label: "Years Experience" },
   { value: "20+", label: "Projects Delivered" },
-  { value: "20+", label: "Happy Clients" },
+  { value: "10+", label: "Happy Clients" },
 ];
 
 interface AboutProps {
   profileImages?: string[];
 }
 
-export function About({ profileImages = [] }: AboutProps) {
+export function About({ profileImages = [personalInfo.profileImage] }: AboutProps) {
+  const images = profileImages.length > 0 ? profileImages : [personalInfo.profileImage];
   const [currentIndex, setCurrentIndex] = useState(0);
-  const imageCount = profileImages.length;
+  const imageCount = images.length;
   const hasMultiple = imageCount > 1;
 
   const nextImage = useCallback(() => {
@@ -61,8 +62,8 @@ export function About({ profileImages = [] }: AboutProps) {
                     className="absolute inset-0"
                   >
                     <Image
-                      src={profileImages[currentIndex]}
-                      alt={`Profile photo ${currentIndex + 1}`}
+                      src={images[currentIndex]}
+                      alt={personalInfo.name}
                       fill
                       className="object-cover rounded-2xl"
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -74,7 +75,7 @@ export function About({ profileImages = [] }: AboutProps) {
                 {/* Dot indicators */}
                 {hasMultiple && (
                   <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-                    {profileImages.map((_, i) => (
+                    {images.map((_, i) => (
                       <button
                         key={i}
                         onClick={() => setCurrentIndex(i)}

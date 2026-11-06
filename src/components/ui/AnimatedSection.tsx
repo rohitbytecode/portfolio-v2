@@ -13,7 +13,7 @@ interface AnimatedSectionProps {
 
 export function AnimatedSection({ children, className, id }: AnimatedSectionProps) {
   const ref = useRef<HTMLElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-25px" });
 
   return (
     <motion.section
@@ -22,7 +22,7 @@ export function AnimatedSection({ children, className, id }: AnimatedSectionProp
       variants={fadeInUp}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
-      className={cn("py-[60px] md:py-[120px] px-4 md:px-6", className)}
+      className={cn("py-10 md:py-16 px-4 md:px-6", className)}
     >
       {children}
     </motion.section>
