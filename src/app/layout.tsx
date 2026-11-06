@@ -35,6 +35,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  icons: {
+    icon: "/favicon.ico",
+  },
   title: siteConfig.title,
   description: siteConfig.description,
   authors: [{ name: siteConfig.author }],
