@@ -24,11 +24,15 @@ export interface ProjectHighlight {
 
 export interface Project {
   id: string;
+  category?: string;
   title: string;
   description: string;
   techStack: string[];
   liveUrl?: string;
+  demo?: string;
+  liveUrlUnavailable?: boolean;
   githubUrl?: string;
+  github?: string;
   npmUrl?: string;
   image: string;
   featured: boolean;
@@ -54,7 +58,7 @@ export interface SkillCategory {
 
 export interface Skill {
   name: string;
-  icon: string;
+  icon?: string;
 }
 
 export interface Testimonial {

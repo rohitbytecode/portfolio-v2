@@ -137,15 +137,26 @@ export function ProjectCard({ project, featured, className }: ProjectCardProps) 
             </a>
           )}
           {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-sm text-[#a1a1aa] hover:text-red-400 transition-colors"
-            >
-              <ExternalLink size={16} />
-              Live Demo
-            </a>
+            project.liveUrlUnavailable ? (
+              <span
+                className="flex items-center gap-1.5 text-sm text-[#555] cursor-not-allowed select-none"
+                aria-disabled="true"
+                title="Live demo is currently unavailable"
+              >
+                <ExternalLink size={16} />
+                Live Demo (Currently unavailable)
+              </span>
+            ) : (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-sm text-[#a1a1aa] hover:text-red-400 transition-colors"
+              >
+                <ExternalLink size={16} />
+                Live Demo
+              </a>
+            )
           )}
         </div>
       )}
