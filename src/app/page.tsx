@@ -5,7 +5,7 @@ import { Projects } from "~/components/sections/Projects";
 import { TechStack } from "~/components/sections/TechStack";
 import { Experience } from "~/components/sections/Experience";
 import { Blog } from "~/components/sections/Blog";
-import { Testimonials } from "~/components/sections/Testimonials";
+import { Stats } from "~/components/sections/Stats";
 import { ResumeCTA } from "~/components/sections/ResumeCTA";
 import { Contact } from "~/components/sections/Contact";
 import { getLatestPosts } from "~/lib/blog";
@@ -21,7 +21,7 @@ export default function Home() {
       <TechStack />
       <Experience />
       <Blog posts={getLatestPosts(4)} />
-      <Testimonials />
+      <Stats />
       <ResumeCTA />
       <Contact />
     </>
