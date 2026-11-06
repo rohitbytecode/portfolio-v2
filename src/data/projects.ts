@@ -40,7 +40,7 @@ export const projects: Project[] = [
       "A CLI tool that scaffolds production-ready React + TypeScript + Tailwind apps in seconds. Ships with Vite, SWC, Shadcn/ui, 25+ ESLint rules, and optional Redux / React Hook Form / Ant Design — all configurable via interactive prompts.",
     techStack: ["Node.js", "React", "TypeScript", "Vite", "Tailwind CSS"],
     npmUrl: "https://www.npmjs.com/package/create-modern-react",
-    githubUrl: "https://github.com/abhay-rana/create-modern-react",
+    githubUrl: "https://github.com/rohitbytecode",
     liveUrl: "https://stackblitz.com/~/github.com/abhay-rana/create-modern-react",
     image: "/projects/create-modern-react.jpg",
     featured: true,

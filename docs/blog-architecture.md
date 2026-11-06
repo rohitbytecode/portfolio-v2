@@ -144,7 +144,7 @@ interface BlogPostFull extends BlogPostMeta {
 
 | Route | File | Rendering | Metadata |
 |-------|------|-----------|----------|
-| `/blog` | `src/app/blog/page.tsx` | Static | Static export: `title: "Blog \| Abhay Rana"` |
+| `/blog` | `src/app/blog/page.tsx` | Static | Static export: `title: "Blog \| Rohit More"` |
 | `/blog/[slug]` | `src/app/blog/[slug]/page.tsx` | SSG | `generateMetadata()`: per-post title, description, canonical URL, OpenGraph (type: article, publishedTime, image from `coverImage`), Twitter `summary_large_image` card |
 
 `generateStaticParams()` in `[slug]/page.tsx` calls `getAllSlugs()` to pre-build all published posts at build time.

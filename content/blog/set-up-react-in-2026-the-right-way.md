@@ -10,7 +10,7 @@ published: true
 
 <div class="callout callout-tldr">
 <div class="callout-title">TL;DR</div>
-<p><code>npx create-modern-react my-app</code> gives you React 19 + TypeScript strict + Vite/SWC + Tailwind + shadcn/ui + routing + API layer + linting + 8 AI dev skills — in 15 seconds. No config hell. <a href="https://github.com/abhay-rana/create-modern-react">GitHub repo</a></p>
+<p><code>npx create-modern-react my-app</code> gives you React 19 + TypeScript strict + Vite/SWC + Tailwind + shadcn/ui + routing + API layer + linting + 8 AI dev skills — in 15 seconds. No config hell. <a href="https://github.com/rohitbytecode">GitHub repo</a></p>
 </div>
 
 ## The Friday Night Problem
@@ -315,7 +315,7 @@ export function Dashboard() {
 
 shadcn/ui components, the `useDebounce` and `useLoader` hooks, typed API helpers, toast notifications — all imported from `~/` paths that resolve correctly because the aliases are already set up. This is day-one code, not "after two hours of config" code.
 
-Want to see the full configuration, hooks, and API layer? [Check out the repo on GitHub.](https://github.com/abhay-rana/create-modern-react)
+Want to see the full configuration, hooks, and API layer? [Check out the repo on GitHub.](https://github.com/rohitbytecode)
 
 ## "But Why Did You Pick _That_ Library?"
 
@@ -373,10 +373,10 @@ Here's the part where I ask you to run a command and star a repo.
 npx create-modern-react my-app
 ```
 
-If it saves you 47 minutes, [star it on GitHub](https://github.com/abhay-rana/create-modern-react). If something's broken, [open an issue](https://github.com/abhay-rana/create-modern-react/issues). If you want a feature, PRs are open.
+If it saves you 47 minutes, [star it on GitHub](https://github.com/rohitbytecode). If something's broken, [open an issue](https://github.com/rohitbytecode). If you want a feature, PRs are open.
 
 I built this because I'm lazy in the way all good developers are lazy — I'd rather spend a week automating something than 47 minutes doing it by hand. Twice.
 
 ---
 
-*I'm [Abhay Rana](https://dev.to/abhay-rana) — I build tools so I can be lazier. Follow me for more React, TypeScript, and "I automated the boring part" content.*
+*I'm [Rohit More](https://rohitdmore.in) — I build tools so I can be lazier. Follow me for more React, TypeScript, and "I automated the boring part" content.*
